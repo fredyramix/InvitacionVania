@@ -26,7 +26,7 @@ $(document).ready(function() {
     
     /* ======= Countdown ========= */
 	// set the date we're counting down to
-    var target_date = new Date("July 16, 2016").getTime();
+    var target_date = new Date("July 23, 2016").getTime();
      
     // variables for time units
     var days, hours, minutes, seconds;
@@ -79,19 +79,20 @@ $(document).ready(function() {
     /* ======= Google Map ======= */
     map = new GMaps({
         div: '#map',
-        lat: 50.980187,
-        lng: -3.179117,
+        lat: 19.497029, 
+        lng: -99.033726,
         scrollwheel: false,
         zoom: 14,
     });
     
     map.addMarker({
-        lat: 50.980187,
-        lng: -3.179117,
+        lat: 19.493364, 
+        lng: -99.030896,
         verticalAlign: 'top',
-        title: 'Ceremony Location',  
+        title: 'Ceremonia',
+        icon : 'assets/images/iglesia.png',  
         infoWindow: {
-            content: '<div class="note">Ceremony</div><h4 class="map-title script">St Paul\'s Church</h4><div class="address"><span class="region">Address line goes here</span><br><span class="postal-code">Postcode</span><br><span class="city-name">City</span></div>'
+            content: '<div class="note">Iglesia</div><h4 class="map-title script">Parroquia de Nuestra <br> Señora de la Merced</h4><div class="address"><span class="region">Calle de las rosas S/N <br> col. Ejército del trabajo  valle de aragon 3a. Secc.</span><br><span class="city-name">Ecatepec de Morelos México</span></div>'
         }
         
         
@@ -99,11 +100,12 @@ $(document).ready(function() {
     
 
     map.addMarker({
-        lat: 50.969747,
-        lng: -3.199985,
-        title: 'Reception Location',      
+        lat: 19.499431, 
+        lng: -99.032524,
+        title: 'Recepción',
+        icon : 'assets/images/fiesta.png',      
         infoWindow: {
-            content: '<div class="note">Reception</div><h4 class="map-title script">The Manor House</h4><div class="address"><span class="region">Address line goes here</span><br><span class="postal-code">Postcode</span><br><span class="city-name">City</span></div>'
+            content: '<div class="note">Recepción</div><h4 class="map-title script">Salón Zapata 94 </h4><div class="address"><span class="region">Calle amistad S/N , Col solidaridad 90 <br> Ubicado entre Av Guadiana  y <br> calle alianza Nacional</span><br></div>'
         } 
         
     });
